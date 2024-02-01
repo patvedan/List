@@ -1,0 +1,8 @@
+# Write a Python function to check if a given list is sorted in ascending order.
+
+def is_sorted_ascending(lst):
+    return all(lst[i] <= lst[i + 1] for i in range(len(lst) - 1 ))
+
+my_list = [1,2.4,7,9]
+result = is_sorted_ascending(my_list)
+print("Is the list sorted in ascedning order?", result)
